@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Developer Portfolio</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+</head>
+<body>
+
+	<!-- NavBar Start -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+	  <a class="navbar-brand" href="#landing">Home</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#tools">Tools</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<!-- NavBar End -->
+
+	<!-- Landing Section Start -->
+	<div class="container-fluid min-vh-100 p-3 p-md-5 bg-dark text-light" id="landing">
+		<img src="./image1.jpg" class="mt-5 mb-3 rounded-circle" width="300">
+		<div class="row mt-2 ml-2">
+			<div>
+				<h2>Kevin Mercadal</h2>
+				<h4>Full Stack Web Developer</h4>
+			</div>
+		</div>
+	</div>
+
+	<!-- Landing Section End -->
+
+	<!-- Projects Section Start-->
+	
+	<div class="text-light min-vh-100 p-5 bg-secondary" id="projects">
+		<h2 class="mb-3">Projects</h2>
+		<div class="d-lg-flex justify-content-around p-md-5">
+
+			<!-- Project 1 Card Start -->
+			<div class="card bg-dark text-light col-xl-4 mb-5 mb-xl-0">
+			  <div class="card-body">
+			  	<img src="./web1.png" class="card-img-top" width="300" height="275">
+			    <h5 class="card-title">Ecommerce Website</h5>
+			    <p class="card-text">The mockup website for children's clothing is a vibrant and user-friendly platform that offers a fun and interactive shopping experience. With colorful visuals and engaging animations, it showcases the latest trends and seasonal collections for kids. The website includes detailed product pages with descriptions, sizing charts, and customer reviews, making it easy for parents to find and purchase the perfect clothing items for their children.</p>
+			  </div>
+			</div>
+			<!-- Project 1 Card End-->
+
+			<!-- Project 2 Card Start -->
+			<div class="card bg-dark text-light col-xl-4 mb-5 mb-xl-0">
+			  <div class="card-body">
+			  	<img src="./web2.jpg" class="card-img-top" width="300" height="275">
+			    <h5 class="card-title">Career Website</h5>
+			    <p class="card-text">The career website is a comprehensive platform that provides job seekers with a wealth of resources and opportunities. It features job listings from various industries, offers tools for resume building and interview preparation, and provides valuable career advice and guidance to help individuals navigate their professional paths successfully.</p>
+			  </div>
+			</div>
+
+			<!-- Project 2 Card End-->
+
+		</div>
+	</div>
+	<!-- Projects Section End-->	
+
+	<!-- Tools Section Start -->
+	<div class="text-light min-vh-100 p-5 bg-dark" id="tools">
+		<h2 class="mb-3">Tools</h2>
+		<div class="d-flex justify-content-center">
+			<img src="./tools2.png" width="400">
+		</div>
+	</div>
+
+	<!-- Tools Section End -->
+
+	<!-- Contact Section Start -->
+
+	<div class="bg-secondary text-light min-vh-100 p-5" id="contact">
+			<h2 class="mb-3">Contact Me</h2>
+			<div class="offset-md-4 card col-md-4 p-2 text-light bg-dark">
+
+			<form>
+                 <div class="form-row">
+                    <div class="col">
+                    	<label for="exampleFormControl">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+               	<div class="form-group">
+                     <label for="exampleFormControlTextarea1">Message</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+               </div>
+            </form>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary bg-secondary" data-toggle="modal" data-target="#exampleModal">
+			  Send Email
+			</button>
+
+			<!-- Start of Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for contacting us!</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body text-dark">
+			        Message Successfully Sent
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+            <!-- End of Modal -->
+
+	<!-- Contact Section End -->
+
+
+<!-- Bootstrap Script -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
